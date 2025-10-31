@@ -1,10 +1,10 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, use } from "react";
 import { ref, set, onValue, push, remove, update } from "firebase/database";
 import { LogOut, Users } from "lucide-react";
 import MessageList from "../components/message-list";
 import MessageInput from "./message-input";
 import UserList from "./user-list";
-import { database } from "../libs/firebase"; // Import database from firebase.tsx
+import { database } from "../libs/firebase";
 
 interface ChatPageProps {
   username: string;
